@@ -1,17 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Yashika Gupta</div>
-      <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Yashika Gupta</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Yashika Gupta</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="me.jpg" alt="Yashika Gupta profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">
+      <h3>Hello, I'm</h3>
+      </p>
+      <h1 class="title">Yashika Gupta</h1>
+      <p class="section__text__p2">Software And Web Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2"
+          onclick="window.open('https://drive.google.com/file/d/16XvOn8pnYUUNb9j_IVyl2Kj8vBwt9v3T/view')">
+          Download Résumé
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/yashika-gupta24/'" />
+        <img src="github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/YASHIKAA25'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="Cute-Cat.jpg" alt="">
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="experience.png" alt="Experience icon" class="icon" />
+
+            <h3>Experience</h3>
+            <div>
+              <p>> 6 weeks <br />ReactJS Intern <br /> At Fast Media Pvt. Ltd.</p>
+
+            </div>
+
+            <div>
+              <p>> 6 weeks <br />Software Development Intern <br /> At Bharat Electronics Ltd.</p>
+            </div>
+          </div>
+          <div class="details-container">
+            <img src="education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Bachelor of Technology <br /> In Computer Science and Engineering</p> <br />
+            <p>Final Year</p> <br />
+            <p>CGPA : 8.21</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Seeking a challenging position in a reputable organization to expand and utilize my learning, skills and
+            knowledge. Possess excellent communication skills , leadership skills and have an eye for detail. Flexible
+            to work in any environment as required. A good mentee will respect you and appreciate the time you spend in
+            mentoring and i consider myself as a "good mentee".
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title"></h2>
+          <div class="article-container">
+            <article>
+
+              <div>
+                <h3> > C++</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+
+              <div>
+                <h3> > Java</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+
+              <div>
+                <h3> > GO</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+
+              <div>
+                <h3> > HTML</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+
+              <div>
+                <h3> > CSS</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+
+              <div>
+                <h3> > JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+
+
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title"></h2>
+          <div class="article-container">
+            <article>
+
+              <div>
+                <h3> > ReactJS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+
+              <div>
+                <h3> > Next.JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+
+              <div>
+                <h3> >NodeJS</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+
+            <article>
+
+              <div>
+                <h3> > APIs</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+
+
+
+            <article>
+
+              <div>
+                <h3> > Git</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+
+
+
+
+
+            <article>
+
+              <div>
+                <h3> > Github</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="3d.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">3D Animated Website</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/YASHIKAA25/3D-Animated-Website'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://yashikaa25.github.io/3D-Animated-Website/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="tictic.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Tic Tac Toe <br /> Game</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/YASHIKAA25/Tic-Tac-Toe'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://yashikaa25.github.io/Tic-Tac-Toe/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="tobe.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">To Be Continued....<br /> Check these sites</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/YASHIKAA25'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://leetcode.com/Yashikagupta242004/'">
+              Leetcode
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://auth.geeksforgeeks.org/user/yashika242004'">
+              GeeksforGeeks
+            </button>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:yashika77227@gmail.com">Email</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/yashika-gupta24/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Skills</a></li>
@@ -20,358 +315,9 @@
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Yashika Gupta</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="me1.jpg" alt="Yashika Gupta profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1"><h3>Hello, I'm</h3></p>
-        <h1 class="title">Yashika Gupta</h1>
-        <p class="section__text__p2">Software And Web Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('https://drive.google.com/file/d/1AMKDHQl88jcMNv8xToALFqyi4Ks5_nUA/view?usp=drivesdk')"
-          >
-            Download Résumé
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/yashika-gupta24/'"
-          />
-          <img
-            src="github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/YASHIKAA25'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="me.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p> 6 weeks <br />Software Development Intern <br/> At Bharat Electronics Ltd.</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Bachelor of Technology <br/> In Computer Science and Engineering</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Seeking a challenging position in a reputable organization to expand and utilize my learning, skills and knowledge. Possess excellent communication skills , leadership skills and have an eye for detail. Flexible to work in any environment as required. A good mentee will respect you and appreciate the time you spend in mentoring and i consider myself as a "good mentee".
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title"></h2>
-            <div class="article-container">
-              <article>
-                
-                <div>
-                  <h3> > C++</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                
-                <div>
-                  <h3> > Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                
-                <div>
-                  <h3> > GO</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                
-                <div>
-                  <h3> > JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                
-                <div>
-                  <h3> > NodeJS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-               
-                <div>
-                  <h3> > React</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
+    <p>Copyright &#169; 2023 Yashika Gupta. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 
-
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title"></h2>
-            <div class="article-container">
-              <article>
-                
-                <div>
-                  <h3> > Git</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-               
-                <div>
-                  <h3> > Github</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                
-                <div>
-                  <h3> > Spring Boot</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-
-              <article>
-                
-                <div>
-                  <h3> > HTML</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-
-
-
-              <article>
-                
-                <div>
-                  <h3> > CSS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-
-
-
-
-
-              <article>
-                
-                <div>
-                  <h3> > QT</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-
-      <img
-        src="arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="3d.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">3D Animated Website</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/YASHIKAA25/3D-Animated-Website'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://yashikaa25.github.io/3D-Animated-Website/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="tictic.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Tic Tac Toe <br/> Game</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/YASHIKAA25/Tic-Tac-Toe'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://yashikaa25.github.io/Tic-Tac-Toe/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="tobe.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">To Be Continued....<br/> Check these sites</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/YASHIKAA25'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://leetcode.com/Yashikagupta242004/'"
-              >
-                Leetcode
-              </button>
-              <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://auth.geeksforgeeks.org/user/yashika242004'"
-            >
-              GeeksforGeeks
-            </button>
-
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:yashika77227@gmail.com">Email</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/yashika-gupta24/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 Yashika Gupta. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
 </html>
